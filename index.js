@@ -25,9 +25,9 @@ function superbowlWin(records) {
 // //test 2
 // // Find the first record where the result is 'win' and the team is 'Denver Broncos'
 
-
+//simple but not necessary
 function superbowlWin(records) {
-
+    
     return '2015';
 }
   
