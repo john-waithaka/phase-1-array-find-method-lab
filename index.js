@@ -14,7 +14,7 @@
 
 
 function superbowlWin(records) {
-   
+//can also be used to pass test 1
         const winningRecord = records.find(record => record.result === 'win');
 
         // If winning record is found, return the year of the win
@@ -25,21 +25,12 @@ function superbowlWin(records) {
 // //test 2
 // // Find the first record where the result is 'win' and the team is 'Denver Broncos'
 
-//simple but not necessary
-function superbowlWin(records) {
-    
-    return '2015';
-}
   
+superbowlWin = (record) => {
+        const result = record.find( record => record.result === "W" );
+        return !!result ? result.year : undefined;
+      }
 
 
 
-function superbowlWin(records) {
-        // find the year the Denver Broncos won
-        
-        const winningRecord = records.find(record => record.team === 'Denver Broncos' && record.result === 'win');
-        // find truthy or falsiness and if year is found, okay, else return undefined
-        const year = winningRecord ? winningRecord.year : undefined;
-        return year;
-}
-      
+
